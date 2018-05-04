@@ -1,0 +1,19 @@
+/*ul, div {*/
+  /*border: 1px solid red*/
+/*}*/
+
+.navbar {
+  height: 7vh;
+}
+.nav-item:hover {
+  background: rgba(209, 209, 240, 0.4);
+  border-radius: 5px;
+  /*margin: 2vh 0;*/
+}
+span {
+  /*border: 1px solid red;*/
+  background: white!important;
+}
+
+
+

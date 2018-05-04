@@ -1,0 +1,27 @@
+.nav-vertical {
+  height: 90vh;
+  width: 18vw;
+  background: #FAFAFA;
+}
+.image-user {
+  height: 50px;
+  width: 50px;
+  border-radius: 50%;
+  background: red;
+  background: url('../../assets/images/users.png');
+}
+
+.nav-item:hover {
+  background: #545454 ;
+}
+
+.nav-item a:hover{
+  /*color: #292961!important;*/
+}
+
+ul {
+  border: 1px solid red;
+  width: 18vw;
+
+
+}
