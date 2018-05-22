@@ -11,5 +11,8 @@ export class NavVerticalComponent implements OnInit {
 
   ngOnInit() {
   }
+  toggleList(e) {
+    console.log(e);
+  }
 
 }

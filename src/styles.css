@@ -1,6 +1,6 @@
 /* You can add global styles to this file, and also import other style files */
 body {
-  font-family: 'Raleway', sans-serif;
+  font-family: 'Roboto', sans-serif;
 }
 .bg-blue {
   background: #292961 !important
@@ -12,4 +12,13 @@ body {
 
 .text-gray {
   color: #B8B8B8
+}
+
+.text-size-12 {
+  font-size: 12px;
+}
+
+
+.text-purple {
+  color: #B9B9DC!important;
 }

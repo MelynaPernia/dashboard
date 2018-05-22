@@ -1,19 +1,32 @@
-/*ul, div {*/
-  /*border: 1px solid red*/
-/*}*/
-
 .navbar {
-  height: 7vh;
+  height: 40px;
 }
-.nav-item:hover {
-  background: rgba(209, 209, 240, 0.4);
+
+.input-group  {
   border-radius: 5px;
-  /*margin: 2vh 0;*/
-}
-span {
-  /*border: 1px solid red;*/
-  background: white!important;
+  background: #5C5C8C;
 }
 
+.input-search {
+  height: 30px;
+ }
 
+.input-search::placeholder {
+  color: #B9B9DC;
+  font-size: 14px;
+}
+
+i {
+  color: #B9B9DC;
+}
+
+.text-purple:hover {
+  color: #ffffff!important;
+  background: #4B4B7E;
+  border-radius: 5px;
+}
+
+.input-search:focus {
+  box-shadow: none;
+}
 

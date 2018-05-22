@@ -1,0 +1,15 @@
+{"success":true,
+  "data":
+  {"floorplan":
+  {"oepraciones":
+  [{"numOperacion":"1",
+    "cliente":"CLIENTE SAC 01"
+  ,"fechaVencimiento":"15/01/2018",
+    "mondea":"Dolares",
+    "monto":"150000.00",
+    "saldo":"160000.00"},
+    {"numOperacion":"2","cliente":"CLIENTE SAC 02",
+      "fechaVencimiento":"16/01/2018","mondea":"Dolares","monto":"140000.00","saldo":"130000.00"},
+    {"numOperacion":"3","cliente":"CLIENTE SAC 03",
+      "fechaVencimiento":"17/01/2018","mondea":"Dolares","monto":"170000.00","saldo":"180000.00"}]}},
+  "errors":[],"lastUpdate":"07-05-2018 02:51:46"}

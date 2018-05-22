@@ -1,0 +1,8 @@
+<h2>To-do</h2>
+<input  type="text" class="form-control mb-3 mt-3" placeholder="Search"
+       (keypress)="addTask($event)" >
+<ul class="list-group" *ngFor="let list of listTask">
+  <li class="list-group-item" [ngStyle]="{'text-decoration-line': (list.state) ? 'line-through' : ''}"><input type="checkbox" > {{list.name}} </li>
+
+</ul>
+<div>{{listTask | json}}</div>
