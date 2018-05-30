@@ -28,5 +28,14 @@ i {
 
 .input-search:focus {
   box-shadow: none;
+  background-color: #FFFFFF!important;
+  color: #000000;
+
 }
+
+.input-search-click {
+  background-color: white;
+}
+
+/*.input-search:*/
 

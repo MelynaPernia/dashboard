@@ -10,6 +10,7 @@ import { RouterModule, Routes } from '@angular/router';
 import { HelpComponent } from './help/help.component';
 import { InputComponent } from './input/input.component';
 import { ListTaskComponent } from './list-task/list-task.component';
+import {FormsModule} from '@angular/forms';
 const appRoutes: Routes = [
   {path: '', component: ToDoComponent},
   {path: 'todo', component: ToDoComponent},
@@ -28,6 +29,7 @@ const appRoutes: Routes = [
   ],
   imports: [
     BrowserModule,
+    FormsModule,
     RouterModule.forRoot(appRoutes)
   ],
   providers: [],

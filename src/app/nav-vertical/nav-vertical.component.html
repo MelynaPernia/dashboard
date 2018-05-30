@@ -1,35 +1,16 @@
-<!--<div class="nav-sidebar d-flex flex-column justify-content-between">-->
-  <!--<ul class="nav-sidebar-link">-->
-    <!--<li class="pb-2 pt-2">-->
-      <!--<a href="" class="d-flex align-items-center text-title ">-->
-        <!--<div class="image-user border"><img src="../../assets/images/users.png" alt=""></div>-->
-        <!--<span class="pl-2 text-uppercase font-weight-bold text-dark"> Titulo</span>-->
-      <!--</a>-->
-    <!--</li>-->
-    <!--<li class="pb-2 pt-2" >-->
-      <!--<a  class="list-text"  routerLink="/todo"><i class="fas fa-home"></i> <span>To-do</span></a>-->
-    <!--</li>-->
-    <!--<li class="pb-2 pt-2">-->
-      <!--<a class=" list-text " routerLink="/help"><i class="fas fa-question"></i> <span>Help</span></a>-->
-    <!--</li>-->
-  <!--</ul>-->
-  <!--<div class="text-collapse border-top text-gray pt-2 pb-2 pl-3" (click)="toggleList($event);">-->
-    <!--<i class="fas fa-angle-double-left"></i> <span>Collapse sidebar</span>-->
-  <!--</div>-->
-<!--</div>-->
 <div class="nav-sidebar d-flex flex-column justify-content-between">
-  <ul class="nav-sidebar-link">
-    <li class="pb-2 pt-2">
-      <a href="" class="d-flex align-items-center ">
+  <ul class="nav-sidebar-link" >
+    <li class="pb-2 pt-2 " data-toggle="tooltip">
+      <a href="" class="d-flex align-items-center">
         <div class="image-user border"><img src="../../assets/images/users.png" alt=""></div>
         <span class="text-uppercase font-weight-bold text-dark pl-2 name-user"> Titulo</span>
       </a>
     </li>
-    <li class="pb-2 pt-2" >
-      <a  class="list-text text-gray "  routerLink="/todo"><i class="fas fa-home"></i> <span>To-do</span></a>
+    <li class="pb-2 pt-2" data-toggle="tooltip" data-style="none">
+      <a class="list-text text-gray" id="to-do" (click)="toDo($event);"  routerLink="/todo"><i class="fas fa-home"></i> <span>To-do</span></a>
       <ul class="nav-sidebar-link">
-        <li class="pb-1 pt-1">
-          <a class=" list-text text-gray "> <span>Details</span></a>
+        <li class="pb-1 pt-1" >
+          <a class=" list-text text-gray "> <span >Details</span></a>
         </li>
         <li class="pb-1 pt-1">
           <a class=" list-text text-gray "> <span>Activity</span></a>
@@ -37,11 +18,19 @@
       </ul>
     </li>
 
-    <li class="pb-2 pt-2">
+    <li class="pb-2 pt-2" data-toggle="tooltip" id="box-two" (mouseover)="boxLista();" >
       <a class=" list-text text-gray " routerLink="/help"><i class="fas fa-question"></i> <span>Help</span></a>
+      <div class="box-mouse-hover" hidden>
+        <li class="pb-1 pt-1" >
+          <a class=" list-text text-gray "> <span >Details</span></a>
+        </li>
+        <li class="pb-1 pt-1">
+          <a class=" list-text text-gray "> <span>Activity</span></a>
+        </li>
+      </div>
     </li>
   </ul>
-  <div class="text-collapse border-top text-gray pt-2 pb-2 pl-3" (click)="toggleList($event);">
+  <div class="text-collapse border-top text-gray pt-2 pb-2 pl-3" >
     <i class="fas fa-angle-double-left"></i> <span>Collapse sidebar</span>
   </div>
 </div>
