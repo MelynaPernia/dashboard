@@ -1,4 +1,5 @@
 import {Component, Input, OnInit} from '@angular/core';
+import {Task} from '../models/task.model';
 
 @Component({
   selector: 'app-list-task',
@@ -6,18 +7,12 @@ import {Component, Input, OnInit} from '@angular/core';
   styleUrls: ['./list-task.component.css']
 })
 export class ListTaskComponent implements OnInit {
-  // @Input() listTask ;
-  // obj =  ;
-
-  listTask = [
-    {id: 1 , name: 'Hacer tarea', state: true},
-    {id: 2 , name: 'Hacer tarea 1', state: false},
-    {id: 3 , name: 'Hacer tarea 2', state: true},
-    {id: 4 , name: 'Hacer tarea 3', state: true}];
+  @Input() listTask: Task[];
   constructor() { }
 
   ngOnInit() {
   }
+
 
   addTask(e) {
     if (e.keyCode === 13) {

@@ -1,0 +1,26 @@
+.box-mouse-hover1  {
+  padding: 0;
+  border: 1px solid blue;
+  z-index: 100000 !important;
+}
+.box-mouse-hover1 li {
+  /*font-family: 'Roboto', sans-serif;*/
+  list-style: none;
+  font-size: 13px;
+  /*padding: 1vh 0vh 1vh 5vh!important;*/
+  border: 1px solid green;
+  padding-top: 1.5vh!important;
+  padding-bottom: 1.5vh!important;
+
+}
+
+
+li:hover{
+  background: #EBEBEB!important;
+}
+
+
+/*a:hover  {*/
+  /*background: red!important;*/
+/*}*/
+

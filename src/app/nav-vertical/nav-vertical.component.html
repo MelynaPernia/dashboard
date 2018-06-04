@@ -1,36 +1,53 @@
 <div class="nav-sidebar d-flex flex-column justify-content-between">
-  <ul class="nav-sidebar-link" >
-    <li class="pb-2 pt-2 " data-toggle="tooltip">
-      <a href="" class="d-flex align-items-center">
-        <div class="image-user border"><img src="../../assets/images/users.png" alt=""></div>
-        <span class="text-uppercase font-weight-bold text-dark pl-2 name-user"> Titulo</span>
+  <ul class="navbar-nav text-size-14 p-0">
+    <li class="nav-item" data-toggle="tooltip">
+      <a href="" class="nav-link d-flex align-items-center">
+        <div class="ml-3 image-user border">
+          <img src="../../assets/images/users.png" alt="Image user">
+        </div>
+        <span class="font-weight-bold text-uppercase text-dark pl-2">Título</span>
       </a>
     </li>
-    <li class="pb-2 pt-2" data-toggle="tooltip" data-style="none">
-      <a class="list-text text-gray" id="to-do" (click)="toDo($event);"  routerLink="/todo"><i class="fas fa-home"></i> <span>To-do</span></a>
-      <ul class="nav-sidebar-link">
-        <li class="pb-1 pt-1" >
-          <a class=" list-text text-gray "> <span >Details</span></a>
+    <li class="nav-item">
+      <a class="nav-link text-gray pl-3 pb-2 nav-dropdown"
+         data-toggle="dropdown-submenu"
+         routerLink="/todo"
+          (click)="toggle()">
+        <i class="fas fa-home"></i>
+        <span>To-do</span>
+      </a>
+      <ul class="nav-sidebar-link p-0 display-none">
+        <li class="nav-item">
+          <a class="nav-link text-gray pb-1 pl-4">
+            <span>Details</span>
+          </a>
         </li>
-        <li class="pb-1 pt-1">
-          <a class=" list-text text-gray "> <span>Activity</span></a>
+        <li class="nav-item">
+          <a class="nav-link text-gray pb-1 pl-4">
+            <span>Activity</span>
+          </a>
         </li>
       </ul>
     </li>
-
-    <li class="pb-2 pt-2" data-toggle="tooltip" id="box-two" (mouseover)="boxLista();" >
-      <a class=" list-text text-gray " routerLink="/help"><i class="fas fa-question"></i> <span>Help</span></a>
-      <div class="box-mouse-hover" hidden>
-        <li class="pb-1 pt-1" >
-          <a class=" list-text text-gray "> <span >Details</span></a>
-        </li>
-        <li class="pb-1 pt-1">
-          <a class=" list-text text-gray "> <span>Activity</span></a>
-        </li>
+    <!--(mouseover)="boxLista();-->
+    <li class="nav-item" data-toggle="tooltip" >
+      <a class="nav-link text-gray pl-3" routerLink="/help">
+        <i class="fas fa-question"></i>
+        <span>Help</span>
+      </a>
+      <div class="box-mouse-hover">
+        <!--<app-submenu></app-submenu>-->
       </div>
     </li>
+
+    <div class="alert alert-warning alert-dismissible fade show" role="alert">
+      <strong>Holy guacamole!</strong> You should check in on some of those fields below.
+      <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+        <span aria-hidden="true">&times;</span>
+      </button>
+    </div>
   </ul>
-  <div class="text-collapse border-top text-gray pt-2 pb-2 pl-3" >
+  <div class="text-collapse border-top text-gray pt-2 pb-2 pl-3" id="btn-collapse" >
     <i class="fas fa-angle-double-left"></i> <span>Collapse sidebar</span>
   </div>
 </div>

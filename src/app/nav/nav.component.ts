@@ -11,6 +11,7 @@ export class NavComponent implements OnInit {
 
   ngOnInit() {
   }
+  /*
   buscar() {
     console.log('st');
     const s = document.getElementById('search-project');
@@ -29,6 +30,6 @@ export class NavComponent implements OnInit {
     // spanIcono.lastElementChild.setAttribute('class', 'fas fa-times');
 
   }
-
+*/
 
 }

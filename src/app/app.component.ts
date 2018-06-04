@@ -1,4 +1,6 @@
-import { Component } from '@angular/core';
+import {Component, OnInit, ViewChild} from '@angular/core';
+import {NavVerticalComponent} from './nav-vertical/nav-vertical.component';
+import {Task} from './models/task.model';
 
 @Component({
   selector: 'app-root',
@@ -6,5 +8,10 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
+  @ViewChild(NavVerticalComponent) navVertical: NavVerticalComponent;
 
+  constructor() {}
+  sizeNav() {
+    console.log('st');
+  }
 }

@@ -1,5 +1,6 @@
-import { Component, OnInit } from '@angular/core';
+import {Component, OnInit, ViewChild} from '@angular/core';
 import * as $ from 'jquery'
+import {SubmenuComponent} from '../submenu/submenu.component';
 // import {j}
 
 @Component({
@@ -8,17 +9,19 @@ import * as $ from 'jquery'
   styleUrls: ['./nav-vertical.component.css']
 })
 export class NavVerticalComponent implements OnInit {
-
-  constructor() { }
-  isMiddleDivVisible: Boolean = true;
-  ngOnInit() {
-    // $(window).click(function () {
-    //   // alert('ok');
-    //   // $('li').on('click',function(e){
-    //   //   console.log(e)
-    //   // })
-    // });
+  @ViewChild(SubmenuComponent) submenu: SubmenuComponent;
+  state: boolean;
+  constructor() {
   }
+
+  ngOnInit() {
+  }
+
+  toggle() {
+    $('.nav-sidebar-link').toggle();
+  }
+
+  /*
   toDo(e) {
     const toDo = document.getElementById('to-do');
     toDo.parentElement.dataset.style = 'box';
@@ -40,6 +43,12 @@ export class NavVerticalComponent implements OnInit {
 
 
   }
+
+  navIconos() {
+    console.log('st');
+  }
+*/
+
   //   $(window).click(function(){
   //     alert('st')
   //   })

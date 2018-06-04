@@ -11,6 +11,8 @@ import { HelpComponent } from './help/help.component';
 import { InputComponent } from './input/input.component';
 import { ListTaskComponent } from './list-task/list-task.component';
 import {FormsModule} from '@angular/forms';
+import { SubmenuComponent } from './submenu/submenu.component';
+import { MainComponent } from './main/main.component';
 const appRoutes: Routes = [
   {path: '', component: ToDoComponent},
   {path: 'todo', component: ToDoComponent},
@@ -25,7 +27,9 @@ const appRoutes: Routes = [
     NavVerticalComponent,
     HelpComponent,
     InputComponent,
-    ListTaskComponent
+    ListTaskComponent,
+    SubmenuComponent,
+    MainComponent
   ],
   imports: [
     BrowserModule,

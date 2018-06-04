@@ -1,3 +1,9 @@
+/*--blue-dark: #292961;*/
+/*--blue-light: #B9B9DC;*/
+/*--gray: #545454;*/
+/*--gray-dark: #2E2E2E;*/
+/*--gray-light: #B8B8B8;*/
+
 .navbar {
   height: 40px;
 }
@@ -12,7 +18,7 @@
  }
 
 .input-search::placeholder {
-  color: #B9B9DC;
+  color: var(--blue-light);
   font-size: 14px;
 }
 
@@ -37,5 +43,19 @@ i {
   background-color: white;
 }
 
-/*.input-search:*/
+.dropdown-menu{
+  margin-right: 20vh!important;
+  /*border:1px solid red;*/
+}
+
+.dropdown > .dropdown-menu{
+  /*border: 1px solid green*/
+  left: -8vw!important;
+  top: 25px;
+  box-shadow: 1px 1px 1px var(--blue-light);
+  font-size: 13px;
+}
+.dropdown-menu>a:hover {
+  background-color: #FAFAFA!important;
+}
 
